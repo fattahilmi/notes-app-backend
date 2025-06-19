@@ -6,7 +6,7 @@ import cors from 'cors';
 import router from './routes.js';
 
 const app = express();
-const PORT = 8200;
+const PORT = 5000;
 const HOST = process.env.NODE_ENV !== 'production' ? 'localhost' : '0.0.0.0';
 
 // Middleware
@@ -18,4 +18,5 @@ app.use('/api', router);
 
 app.listen(PORT, HOST, () => {
   console.log(`Server is running on http://${HOST}:${PORT}`);
+  console.log(`Open your browser at http://${HOST}:${PORT}/api/notes`);
 });
