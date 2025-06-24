@@ -1,4 +1,5 @@
-// npm run lint
+// npm run newman
+// newman run notes-api-test.postman_collection.json --environment notes-api-test.postman_environment.json
 
 import express from 'express';
 import cors from 'cors';

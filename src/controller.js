@@ -35,7 +35,7 @@ const getNoteById = (req, res) => {
 
 const createNote = (req, res) => {
     const { title, tags, body } = req.body; // Assuming the request body contains the note data
-    console.log("Creating note with data:", { title, tags, body });
+    // console.log("Creating note with data:", { title, tags, body });
     const id = nanoid(16); // Generate a unique ID for the note
     const createdAt = new Date().toISOString();
     const updatedAt = createdAt;
